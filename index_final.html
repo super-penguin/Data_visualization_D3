@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>New York City Mental Health Profile 2014</title>
+  <script type="text/javascript" src="http://d3js.org/d3.v4.min.js"></script>
+  <script type="text/javascript" src="http://d3js.org/queue.v1.min.js"></script>
+  <script type="text/javascript" src="http://d3js.org/topojson.v0.min.js"></script>
+  <!-- <script type="text/javascript" src="http://d3js.org/topojson.v1.min.js"></script> -->
+</head>
+<style>
+.container {
+    float: left;
+}
+path {
+  stroke:grey;
+  stroke-width: 1px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  padding: 2px;
+  font-size: 12px;
+  background: white; //#FFFFE0;
+  border: 1px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+</style>
+<body>
+    <div class="container" id='map1'></div>
+    <div class="container" id='map2'></div>
+    <div class="container" id='map3'></div>
+
+    <script src = "NYC_mental_2014_v3.js"></script>
+</body>
+</html>
